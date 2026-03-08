@@ -20,6 +20,14 @@ header ul li{
     display: inline;
     margin: 0 10px;
 }
+header ul li a{
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+header ul li a:hover{
+    background-color: #F59E0B;
+}
 /*Main*/
 main{
     display: flex;
