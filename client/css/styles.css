@@ -51,16 +51,16 @@ footer{
     width: auto;
     background-color: #E9E9E9;
 }
-footer section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 footer ul li{
     display: inline;
-    margin: 0 10px;
+    justify-content: space-between;
+    margin: 0 3rem;
 }
+footer ul li a img{
+    width: 40px;
+    height: 40px;
 
+}
 /* General */
 * {
     box-sizing: border-box;
