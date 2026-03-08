@@ -11,11 +11,21 @@ header ul li{
     margin: 0 10px;
 }
 /*Main*/
-    main{
-        background-color: #F5F5F5;
-    }
+main{
+    background-color: #F5F5F5;
+}
+
+/*Group*/
+group img{
+    float: left;
+    max-width: 50%;
+    max-height: 10%;
+}
 /* Footer */
 footer{
+    position: absolute;
+    width: auto;
+    bottom: 0;
     background-color: #E9E9E9;
 }
 footer ul li{
@@ -31,6 +41,7 @@ footer ul li{
 h1, h2, h3, h4, h5, h6, p{
     color: #142B4D;
 }
+
 /* Body */
 body {
     font-family: Arial, sans-serif;
