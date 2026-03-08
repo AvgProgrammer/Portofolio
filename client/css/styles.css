@@ -36,3 +36,8 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/*List items*/
+li {
+    list-style-type: none;
+}
