@@ -12,14 +12,19 @@ header ul li{
 }
 /*Main*/
 main{
+    display: flex;
+    flex-direction: column;
     background-color: #F5F5F5;
 }
 
+group{
+    align-items: center;
+}
 /*Group*/
 group img{
-    float: left;
-    max-width: 50%;
-    max-height: 10%;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 /* Footer */
 footer{
