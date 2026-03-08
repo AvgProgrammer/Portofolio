@@ -23,10 +23,16 @@ group img{
 }
 /* Footer */
 footer{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: auto;
-    bottom: 0;
     background-color: #E9E9E9;
+}
+footer section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 footer ul li{
     display: inline;
