@@ -1,6 +1,11 @@
 /* Header */
+header{
+    background-color: #E9E9E9;
+}
 /*Main*/
-
+    main{
+        background-color: #F5F5F5;
+    }
 /* Footer */
 footer{
     background-color: #E9E9E9;
