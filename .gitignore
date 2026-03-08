@@ -39,10 +39,9 @@ pids/
 .stylelintcache
 *.tsbuildinfo
 
-# Package manager locks (keep only one — remove lines for the one you use)
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
+# Package manager locks
+yarn.lock
+pnpm-lock.yaml
 
 # OS files
 .DS_Store
