@@ -1,6 +1,7 @@
 /* Header */
 header{
     background-color: #E9E9E9;
+    padding: 0%;
 }
 /*Main*/
     main{
@@ -16,3 +17,16 @@ footer ul li{
 }
 
 /* General */
+* {
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    
+}
