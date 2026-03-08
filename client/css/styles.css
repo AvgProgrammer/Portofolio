@@ -2,13 +2,19 @@
 header{
     background-color: #E9E9E9;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
+header h1{
+    flex: 1;
+    text-align: center;
+    order: 1;
+}
 header nav{
+    flex: 1;
     font-size: 1.5rem;
-    
+    text-align: center;
+    order: 2;
 }
 header ul li{
     display: inline;
