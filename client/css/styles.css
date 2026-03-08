@@ -17,19 +17,25 @@ main{
     background-color: #F5F5F5;
 }
 
-
 /*Group*/
+group h1{
+    text-align: center ;
+}
 group img{
     width: 100%;
     max-width: 600px;
     height: auto;
+}
+/*Article*/
+
+article h2{
+   text-align: center;
 }
 article ol{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-/*Article*/
 article ol li{
     display: inline;
 }
