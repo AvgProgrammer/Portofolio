@@ -28,6 +28,9 @@ footer ul li{
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    color: #142B4D;
+}
 /* Body */
 body {
     font-family: Arial, sans-serif;
