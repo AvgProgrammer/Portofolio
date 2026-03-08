@@ -30,3 +30,9 @@ body {
     padding: 0%;
     
 }
+
+/*Links*/
+a {
+    text-decoration: none;
+    color: black;
+}
