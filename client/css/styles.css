@@ -39,6 +39,8 @@ article ol{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    padding: 0;
 }
 article ol li{
     display: inline;
