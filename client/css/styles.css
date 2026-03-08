@@ -6,6 +6,10 @@ header{
     align-items: center;
     padding: 0 20px;
 }
+header nav{
+    font-size: 1.5rem;
+    
+}
 header ul li{
     display: inline;
     margin: 0 10px;
@@ -78,7 +82,7 @@ body {
 /*Links*/
 a {
     text-decoration: none;
-    color: black;
+    color: #142B4D;
 }
 
 /*List items*/
