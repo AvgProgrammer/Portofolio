@@ -49,6 +49,16 @@ main section ol{
     padding: 20px;
     list-style: none;
 }
+@media (max-width: 1024px) {
+    main section ol {
+        grid-template-columns: repeat(2, minmax(0, 300px));
+    }
+}
+@media (max-width: 600px) {
+    main section ol {
+        grid-template-columns: minmax(0, 300px);
+    }
+}
 main section ol li{
     background-color: #FFFFFF;
     border: 1px solid #E9E9E9;
@@ -61,6 +71,11 @@ main section ol li{
 group{
     display: flex;
     align-items: center;
+}
+@media (max-width: 1024px) {
+    group {
+        flex-direction: column;
+    }
 }
 group h1{
     text-align: center ;
@@ -81,6 +96,12 @@ article ol{
     gap: 20px;
     justify-content: center;
     padding: 0;
+}
+@media (max-width: 1024px) {
+    article ol {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 article ol li{
     display: inline;
@@ -145,7 +166,8 @@ li {
     border: 1px solid #E9E9E9;
     border-radius: 5px;
     width: 300px;
-    height: 200px
+    height: auto;
+    overflow: hidden;
 }
 
 /*About Me*/
