@@ -2,13 +2,13 @@ var recentProjectTemp= {}
 
 let recentProjectsScript= document.getElementById("recent-project-template")
 
-recentProjectTemp.contactsList= HandleBars.compile(recentProjectsScript.textContent)
+recentProjectTemp.recentProjects= Handlebars.compile(recentProjectsScript.textContent)
 
-let recentProjectsContect= recentProjectTemp.contactsList({recentProjects: recentProjects})
+let recentProjectsContect= recentProjectTemp.recentProjects({recentProjects:projects})
 
-windwos.addEventListener("DOMContentLoaded", main)
+window.addEventListener("DOMContentLoaded", main)
 
 function main(){
-    let recentProjectsContainer= document.querySelector("#recent-projects")
-    recentProjectsContainer.innerHTML= recentProjectsContect
+    let recentProjects= document.querySelector("#recent-projects")
+    recentProjects.innerHTML= recentProjectsContect
 }

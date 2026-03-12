@@ -9,13 +9,14 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     <script id="Project-list-Template" type="text/x-handlebars-template">
-        <ol></ol>
-            {{each projects}}
+        <ol>
+            {{#each projectsList}}
                 <li>
                     <h3>{{this.title}}</h3>
                     <p>{{this.description}}</p>
                 </li>
             {{/each}}
+        </ol>
     </script>
 
     <script src="js/projects.js"></script>

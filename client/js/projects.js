@@ -1,14 +1,14 @@
 var projectsTemp = {}
 
-let projectsScript = document.getElementById("projects-template")
+let projectsScript = document.getElementById("Project-list-Template")
 
-projectsTemp.contactsList = HandleBars.compile(projectsScript.textContent)
+projectsTemp.projectsList = Handlebars.compile(projectsScript.textContent)
 
-let projectsContent = projectsTemp.contactsList({projects: projects})
+let projectsContent = projectsTemp.projectsList({projectsList: projects})
 
-windows.addEventListener("DOMContentLoaded", main)
+window.addEventListener("DOMContentLoaded", main)
 
 function main(){
-    let projectContain= document.querySelector("#projects")
-    projectContain.innerHTML= projectsContent
+    let projectList= document.querySelector("#projects")
+    projectList.innerHTML= projectsContent
 }

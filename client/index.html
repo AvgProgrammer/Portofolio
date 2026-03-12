@@ -8,19 +8,19 @@
     
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
-    <sript id="recent-project-template">
+    <script id="recent-project-template"  type="text/x-handlebars-template">
         <ol>
-            {{each recentProjects}}
+            {{#each recentProjects}}
                 <li class="project">
-                    <img src={{this.imageURL}} alt={{this.imageDescription}}/>
-                    <h3>{{this.Title}}</h3>
+                    <img src="{{this.imageURL}}" alt="{{this.imageDescription}}"/>
+                    <h3>{{this.title}}</h3>
                     <p>
                         {{this.description}}
                     </p>
                 </li>
             {{/each}}
         </ol>
-    </sript>
+    </script>
 
     <script src="js/index.js"></script>
 </head>
