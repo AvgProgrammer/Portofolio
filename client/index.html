@@ -12,15 +12,17 @@
         <ol>
             {{each recentProjects}}
                 <li class="project">
-                    <img src={{imageURL}} alt="imageDescription"/>
-                    <h3>{{Tittle}}</h3>
+                    <img src={{this.imageURL}} alt={{this.imageDescription}}/>
+                    <h3>{{this.Title}}</h3>
                     <p>
-                        {{description}}
+                        {{this.description}}
                     </p>
                 </li>
             {{/each}}
         </ol>
     </sript>
+
+    <script src="js/index.js"></script>
 </head>
 <body>
     <header>
