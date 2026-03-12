@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lampros Katsaros</title>
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script id="Project-list-Template" type="text/x-handlebars-template">
+        <ol></ol>
+            {{each projects}}
+                <li>
+                    <h3>{{this.title}}</h3>
+                    <p>{{this.description}}</p>
+                </li>
+            {{/each}}
+    </script>
 </head>
 <body>
     <header>
@@ -19,38 +31,7 @@
     <main>
         <section>
             <h2>Projects</h2>
-            <ol>
-                <li>
-                    <h3>Project 1: Personal Portfolio Website</h3>
-                    <p>
-                        Developed a personal portfolio website using HTML, CSS, and JavaScript to showcase my projects and skills. The website features a responsive design, interactive elements, and a clean layout to provide an engaging user experience.
-                    </p>
-                </li>
-                <li >
-                    <h3>Project 2: Task Management App</h3>
-                    <p>
-                        Built a task management application using React and Node.js, allowing users to create, update, and delete tasks. The app includes features like task prioritization, due dates, and a clean, intuitive interface.
-                    </p>
-                </li>
-                <li >
-                    <h3>Project 3: E-Commerce Website</h3>
-                    <p>
-                        Developed a full-stack e-commerce website using React, Node.js, and MongoDB. The site includes features like product browsing, shopping cart functionality, and a secure payment system.
-                    </p>
-                </li>
-                <li >
-                    <h3>Project 4: Weather App</h3>
-                    <p>
-                        Created a weather application using React and a REST API to fetch real-time weather data. The app provides users with accurate weather information, forecasts, and a user-friendly interface.
-                    </p>
-                </li>
-                <li >
-                    <h3>Project 5: Blogging Platform</h3>
-                    <p>
-                        Developed a simple blogging platform using React and Node.js, allowing users to create, edit, and delete blog posts. The platform includes features like user authentication, comment sections, and a clean, responsive design.
-                    </p>
-                </li>
-            </ol>
+            <div id="projects"></div>
         </section>
     </main>
     <footer>
