@@ -1,14 +1,24 @@
-var recentProjectTemp= {}
-
-let recentProjectsScript= document.getElementById("recent-project-template")
-
-recentProjectTemp.recentProjects= Handlebars.compile(recentProjectsScript.textContent)
-
-let recentProjectsContect= recentProjectTemp.recentProjects({recentProjects:projects})
-
-window.addEventListener("DOMContentLoaded", main)
+window.addEventListener('DOMContentLoaded', main)
 
 function main(){
+
+    let recentProjectsScript= document.getElementById("recent-project-template")
+    window.myApp={}
+    myApp.recentProjectsTemp= Handlebars.compile(recentProjectsScript.textContent)
+
+    fetchandShowRecentProjects()
     let recentProjects= document.querySelector("#recent-projects")
     recentProjects.innerHTML= recentProjectsContect
+}
+
+function fetchandShowRecentProjects(){
+
+}
+
+function showError(error){
+
+}
+
+function showRecentProjects(projects){
+
 }
