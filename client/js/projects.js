@@ -32,6 +32,8 @@ function showProjects(data){
     const projectsContent= data.map(project=>({
         title: project.title,
         description: project.description,
+        link: project.link,
+        Image: project.Image
     }))
 
     const projectsTemplate= myApp.projectsTemp({
