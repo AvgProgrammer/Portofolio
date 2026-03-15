@@ -12,7 +12,9 @@
         <ol>
             {{#each recentProjects}}
                 <li class="project">
-                    <img src="{{this.imageURL}}" alt="{{this.imageDescription}}"/>
+                    <a href="{{this.link}}" target="_blank">
+                        <img src="{{this.Image}}" alt="{{this.title}}" />
+                    </a>
                     <h3>{{this.title}}</h3>
                     <p>
                         {{this.description}}

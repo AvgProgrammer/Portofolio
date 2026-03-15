@@ -13,6 +13,9 @@
             {{#each projectsList}}
                 <li>
                     <h3>{{this.title}}</h3>
+                    <a href="{{this.link}}" target="_blank">
+                        <img src="{{this.Image}}" alt="{{this.title}}" />
+                    </a>
                     <p>{{this.description}}</p>
                 </li>
             {{/each}}
