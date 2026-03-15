@@ -22,9 +22,10 @@ app.get('/api/recent-projects', async (req, res) => {
     let results = await collection.find().sort({ id: -1 }).limit(3).toArray();
     console.log("Fetched recent projects:", results);
     res.json(results);
+    
 });
 
-app.get('api/projects', async(req,res)=>{
+app.get('/api/projects', async(_req,res)=>{
     console.log("Requesting all projects...");
     let collection = await db.collection(collection_name);
     let results= await collection.find().toArray();
