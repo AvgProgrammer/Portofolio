@@ -7,18 +7,43 @@ function main(){
     myApp.recentProjectsTemp= Handlebars.compile(recentProjectsScript.textContent)
 
     fetchandShowRecentProjects()
-    let recentProjects= document.querySelector("#recent-projects")
-    recentProjects.innerHTML= recentProjectsContect
 }
 
 function fetchandShowRecentProjects(){
+    let httpsheader=new Headers()
+    httpsheader.append("Accept","application/json")
 
+    let init={
+        method: "GET",
+        Headers: httpsheader
+    }
+
+    fetch("/api/recent-projects", init)
+      .then(response => response.json())
+      .then(data =>
+        showRecentProjects(data)
+      )
+      .catch(err => {
+        showError(err);
+      })
 }
 
 function showError(error){
+    console.error("Error fetching recent projects:", error);
 
 }
 
-function showRecentProjects(projects){
+function showRecentProjects(data){
+    const recentProjectsContect= data.map(project => ({
+        title: project.title,
+        description: project.description,
+        link: project.link,
+        Image: project.Image
+    }))
 
+    const recentProjectsTemplate= myApp.recentProjectsTemp({
+        recentProjects: recentProjectsContect
+    })
+    let recentProjects= document.querySelector("#recent-projects")
+    recentProjects.innerHTML= recentProjectsTemplate
 }
