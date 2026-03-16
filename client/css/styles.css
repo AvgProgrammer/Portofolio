@@ -69,10 +69,12 @@ main section ol li{
 }
 /*Group*/
 group{
+    background-color: #e9e7e7d2;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1700px) {
     group {
         flex-direction: column;
     }
@@ -168,6 +170,12 @@ li {
     width: 300px;
     height: auto;
     overflow: hidden;
+}
+
+/* Buttons */
+button {
+    background-color: #FFFFFF;
+    border: none;
 }
 
 /*About Me*/
