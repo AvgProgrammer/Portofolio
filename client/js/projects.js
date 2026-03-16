@@ -33,7 +33,7 @@ function showProjects(data){
         title: project.title,
         description: project.description,
         link: project.link,
-        Image: project.Image
+        image: project.image
     }))
 
     const projectsTemplate= myApp.projectsTemp({

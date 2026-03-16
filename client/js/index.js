@@ -38,7 +38,7 @@ function showRecentProjects(data){
         title: project.title,
         description: project.description,
         link: project.link,
-        Image: project.Image
+        image: project.image
     }))
 
     const recentProjectsTemplate= myApp.recentProjectsTemp({
