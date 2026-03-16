@@ -43,7 +43,7 @@ main section h2{
 }
 main section ol{
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 300px));
+    grid-template-columns: repeat(3,300px);
     justify-content: space-evenly;
     gap: 20px;
     padding: 20px;
@@ -51,12 +51,12 @@ main section ol{
 }
 @media (max-width: 1024px) {
     main section ol {
-        grid-template-columns: repeat(2, minmax(0, 300px));
+        grid-template-columns: repeat(2, 300px);
     }
 }
 @media (max-width: 600px) {
     main section ol {
-        grid-template-columns: minmax(0, 300px);
+        grid-template-columns: 300px;
     }
 }
 main section ol li{
@@ -72,9 +72,8 @@ group{
     background-color: #e9e7e7d2;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
-@media (max-width: 1700px) {
+@media (max-width: 1024px) {
     group {
         flex-direction: column;
     }
