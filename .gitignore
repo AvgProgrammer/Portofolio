@@ -65,5 +65,4 @@ coverage/
 
 # Misc
 *.local
-client/assets/
 server/data/
