@@ -29,7 +29,7 @@ app.get('/api/projects', async(_req,res)=>{
     console.log("Requesting all projects...");
     let collection = await db.collection(collection_name);
     let results= await collection.find().toArray();
-    console.log("Fetching all projects...");
+    console.log("Fetching all projects...", results);
     res.json(results);
 });
 /*Start Server */
