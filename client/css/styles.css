@@ -64,7 +64,7 @@ main section ol li{
     border: 1px solid #E9E9E9;
     border-radius: 5px;
     padding: 15px;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1.2;
     overflow: auto;
 }
 /*Group*/
